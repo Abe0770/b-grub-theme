@@ -45,17 +45,16 @@ if [[ -e /etc/os-release ]]; then
 
         UPDATE_GRUB="grub2-mkconfig -o ${GRUB_CFG}"
 
-        # BLS etries have 'kernel' class, copy corresponding icon
         if [[ -d /boot/loader/entries && -e icons/${ID}.png ]]; then
             cp icons/${ID}.png icons/kernel.png
         fi
     fi
 fi
 
-echo 'Creating GRUB themes directory'
+echo 'Creating b-grub directory'
 sudo mkdir -p /boot/${GRUB_DIR}/themes/${GRUB_THEME}
 
-echo 'Copying theme to GRUB themes directory'
+echo 'Copying theme to b-grub directory'
 sudo cp -r * /boot/${GRUB_DIR}/themes/${GRUB_THEME}
 
 echo 'Removing other themes from GRUB config'
@@ -70,7 +69,7 @@ sudo sed -i -e :a -e '/^\n*$/{$d;N;};/\n$/ba' /etc/default/grub
 echo 'Adding new line to GRUB config just in case'
 echo | sudo tee -a /etc/default/grub
 
-echo 'Adding theme to GRUB config'
+echo 'Adding path to GRUB config'
 echo "GRUB_THEME=/boot/${GRUB_DIR}/themes/${GRUB_THEME}/theme.txt" | sudo tee -a /etc/default/grub
 
 echo 'Updating GRUB'

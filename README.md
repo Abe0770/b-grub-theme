@@ -9,7 +9,7 @@ Simple GRUB theme for Linux distros
 ## Installing:
 ```
 git clone https://github.com/Abe0770/b-grub.git
-cd b-grub
+cd b-grub-theme
 chmod 777 install.sh
 sudo ./install.sh
 ```

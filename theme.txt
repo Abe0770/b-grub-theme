@@ -47,6 +47,6 @@ terminal-border: "0"
   width = 100%
   align = "center"
   text = "Use ↑ and ↓ keys to change selection, Enter to confirm"
-  color = "#67d97a"
-  font = "Fixedsys Regular 32"
+  color = "#cccccc"
+  font = "Unifont Regular 16"
 }

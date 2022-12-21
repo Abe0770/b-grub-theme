@@ -1,7 +1,7 @@
 # b-grub
 Simple GRUB theme for Linux distros
 
-<img src="https://user-images.githubusercontent.com/76398370/208979692-8e07e45d-d139-4718-9653-b12cee0d1f9e.png" width="400">
+<img src="https://user-images.githubusercontent.com/76398370/208979692-8e07e45d-d139-4718-9653-b12cee0d1f9e.png" width="600">
 
 # Installing and Requirements
 <p> Installation requires root permissions </p>

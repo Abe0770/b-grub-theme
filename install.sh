@@ -79,7 +79,7 @@ if [[ $UPDATE_GRUB ]]; then
 else
     cat << '    EOF'
     --------------------------------------------------------------------------------
-    Cannot detect your distro, you will need to run `grub-mkconfig` (as root) manually.
+    Failed to detect your distro, you will need to run `grub-mkconfig` (as root) manually.
     Common ways:
     - Debian, Ubuntu, Solus and derivatives: `update-grub` or `grub-mkconfig -o /boot/grub/grub.cfg`
     - RHEL, CentOS, Fedora, SUSE and derivatives: `grub2-mkconfig -o /boot/grub2/grub.cfg`

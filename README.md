@@ -15,3 +15,13 @@ cd b-grub-theme
 chmod 777 install.sh
 sudo ./install.sh
 ```
+# Future Updates!
+Version-1.1 includes
+```
+Customizing capabilities
+Background
+Font color
+Font size
+Icon color
+```
+Users will be able to create their own custom grub looks!

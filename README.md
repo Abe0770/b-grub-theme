@@ -11,8 +11,11 @@ This image is different from the actual grub theme in aspects of size, padding e
 ## Installing:
 ```
 git clone https://github.com/Abe0770/b-grub.git
+
 cd b-grub-theme
+
 chmod u+x install.sh
+
 sudo ./install.sh
 ```
 # Future Updates!

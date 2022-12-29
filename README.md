@@ -22,9 +22,9 @@ sudo ./install.sh
 Version-1.1 includes
 ```
 Customizing capabilities
-Background
-Font color
-Font size
-Icon color
+-Background
+-Font color
+-Font size
+-Icon color
 ```
 Users will be able to create their own custom grub looks!

@@ -1,7 +1,7 @@
 
 # Global Property
 title-text: ""
-desktop-image: "grub-4x3.jpg"
+desktop-image: "background.jpg"
 desktop-color: "#2f5595"
 terminal-font: "Unifont Regular 16"
 terminal-left: "0"

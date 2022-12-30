@@ -55,11 +55,11 @@ verify()
     return 0
   fi
   
-  if [ -f /boot/grub/themes/b-grub/grub-4x3.jpg ]
+  if [ -f /boot/grub/themes/b-grub/background.jpg ]
   then 
-  	echo -e "${LGREEN}Located ${NC}/boot/grub/themes/b-grub/grub-4x3.jpg"
+  	echo -e "${LGREEN}Located ${NC}/boot/grub/themes/b-grub/background.jpg"
   else
-    echo -e "${LRED}ERROR: ${NC}Failed to locate /boot/grub/themes/b-grub/grub-4x3.jpg. Run 'install.sh' to rectify the error"
+    echo -e "${LRED}ERROR: ${NC}Failed to locate /boot/grub/themes/b-grub/background.jpg. Run 'install.sh' to rectify the error"
     return 0
   fi
   
@@ -119,22 +119,22 @@ background()
     then
   		if [[ $FILE == *.jpg ]]
       then
-      	if [ -f /boot/grub/themes/b-grub/grub-4x3.png ]
+      	if [ -f /boot/grub/themes/b-grub/background.png ]
       	then 
-      		sudo rm -r /boot/grub/themes/b-grub/grub-4x3.png;
-        	sudo sed -i 's/grub-4x3.png/grub-4x3.jpg/g' /boot/grub/themes/b-grub/theme.txt;
+      		sudo rm -r /boot/grub/themes/b-grub/background.png;
+        	sudo sed -i 's/background.png/background.jpg/g' /boot/grub/themes/b-grub/theme.txt;
         fi
-      	sudo cp $FILE /boot/grub/themes/b-grub/grub-4x3.jpg;
+      	sudo cp $FILE /boot/grub/themes/b-grub/background.jpg;
         echo -e "${LGREEN}Successfully changed the grub background to ${FILE}.${NC}"
         break;
       elif [[ $FILE == *.png ]]
       then 
-        if [ -f /boot/grub/themes/b-grub/grub-4x3.jpg ]
+        if [ -f /boot/grub/themes/b-grub/background.jpg ]
       	then 
-      		sudo rm -r /boot/grub/themes/b-grub/grub-4x3.jpg;
-        	sudo sed -i 's/grub-4x3.jpg/grub-4x3.png/g' /boot/grub/themes/b-grub/theme.txt;
+      		sudo rm -r /boot/grub/themes/b-grub/background.jpg;
+        	sudo sed -i 's/background.jpg/background.png/g' /boot/grub/themes/b-grub/theme.txt;
         fi	
-      	sudo cp $FILE /boot/grub/themes/b-grub/grub-4x3.png;
+      	sudo cp $FILE /boot/grub/themes/b-grub/background.png;
         echo -e "${LGREEN}Successfully changed the grub background to ${FILE}.${NC}"
         break;
       else

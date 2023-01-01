@@ -1,0 +1,61 @@
+
+# Global Property
+title-text: ""
+desktop-image: "background.jpg"
+desktop-color: "#2f5595"
+terminal-font: "Unifont Regular 16"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Show the boot menu
++ boot_menu {
+  left = 25%
+  top = 25%
+  width = 50%
+  height = 60%
+  item_font = "Unifont Regular 16"
+  item_color = "#f3f3f3"
+  selected_item_color = "#ffffff"
+  item_icon_space = 10
+  item_height = 36
+  item_padding = 0
+  item_spacing = 5
+  item_pixmap_style = "item_*.png"
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# Show a countdown message using the label component
++ label {
+  top = 82%
+  left = 35%
+  width = 30%
+  align = "center"
+  id = "__timeout__"
+  text = "Booting in %d seconds"
+  color = "#cccccc"
+  font = "Unifont Regular 16"
+}
+
+# Navigation keys hint 
++ label {
+  left = 0
+  top = 98%-30
+  width = 100%
+  align = "center"
+  text = "Use ↑ and ↓ keys to select which entry is highlighted,"
+  color = "#cccccc"
+  font = "Unifont Regular 16"
+}
+
++ label {
+  left = 0
+  top = 98%-10
+  width = 100%
+  align = "center"
+  text = "Press enter to boot the selected OS, 'e' to edit the commands before booting or 'c' for a command-line. ESC to return previous menu."
+  color = "#cccccc"
+  font = "Unifont Regular 16"
+}

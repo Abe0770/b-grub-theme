@@ -22,7 +22,7 @@ sudo ./install.sh
 ## Customization:
 <p>Add your own touch to Grub and make it look the way you like!<br>
 [Currently available only for GRUB, GRUB2 will be supported in later versions]
-<br>Assuming you're in the b-grub-theme directory</p>
+<br><br>Assuming you're in the b-grub-theme directory</p>
 
 ```
 chmod +x customize.sh

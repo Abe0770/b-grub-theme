@@ -46,4 +46,4 @@ GRUB2 SUPPORT
 ```
 Users will be able to create their own custom grub looks!
 
-### Thanks for stopping by! A ⭐️ would mean a lot to me! 🥺
+### Thanks for stopping by! A ⭐️ would mean a lot to me 🥺

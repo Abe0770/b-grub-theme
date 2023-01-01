@@ -29,6 +29,7 @@ chmod +x customize.sh
 sudo ./customize.sh
 ```
 Background - jpg png
+
 Font color - hex (ffffff)
 
 More features coming soon!

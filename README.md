@@ -18,12 +18,25 @@ chmod u+x install.sh
 
 sudo ./install.sh
 ```
+
+## Customization:
+Add your own touch to Grub and make it look the way you like!
+[Currently available only for GRUB, GRUB2 will be supported in later versions]
+Assuming you're in the b-grub-theme directory
+```
+chmod +x customize.sh
+
+sudo ./customize.sh
+```
+Background - jpg png
+Font color - hex (ffffff)
+
+More features coming soon!
+
 # Future Updates!
 Version-1.1 includes
 ```
 Customizing capabilities
--Background
--Font color
 -Font size
 -Icon color
 ```

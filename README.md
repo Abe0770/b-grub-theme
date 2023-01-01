@@ -28,7 +28,7 @@ chmod +x customize.sh
 
 sudo ./customize.sh
 ```
-Background - jpg png
+Background - jpg png ( Recomended Aspect ratio of the image - 4x3 )
 
 Font color - hex (ffffff)
 

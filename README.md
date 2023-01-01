@@ -40,5 +40,6 @@ Version-1.1 includes
 Customizing capabilities
 -Font size
 -Icon color
+GRUB2 SUPPORT
 ```
 Users will be able to create their own custom grub looks!

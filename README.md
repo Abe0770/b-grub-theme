@@ -31,7 +31,7 @@ sudo ./customize.sh
 ```
 Background - jpg png ( Recomended Aspect ratio of the image - 4x3 )
 
-Font color - hex (ffffff)
+Font color - hex (ffffff for white)
 
 More features coming soon!
 

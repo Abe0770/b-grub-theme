@@ -29,7 +29,7 @@ chmod +x customize.sh
 
 sudo ./customize.sh
 ```
-Background - jpg png ( Recomended Aspect ratio of the image - 4x3 )
+<p>Background - jpg png ( Recomended Aspect ratio of the image - 4x3 other aspect ratios might cause error )</p>
 
 Font color - hex (ffffff for white)
 

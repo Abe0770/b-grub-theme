@@ -10,7 +10,7 @@ This image is different from the actual grub theme in aspects of size, padding e
 
 ## Installing:
 ```
-git clone https://github.com/Abe0770/b-grub.git
+git clone https://github.com/Abe0770/b-grub-theme.git
 
 cd b-grub-theme
 

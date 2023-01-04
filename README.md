@@ -29,7 +29,7 @@ chmod +x customize.sh
 
 sudo ./customize.sh
 ```
-<p>Background - jpg png ( Recomended Aspect ratio of the image - <b>4x3 or 16:9<b> other aspect ratios might cause error ) <br>Execute install.sh and rectify the issue to solve the problems if something wrong happens</p>
+<p>Background - jpg png ( Recomended Aspect ratio of the image - <b>4x3 or 16:9</b> other aspect ratios might cause error ) <br>Execute install.sh and rectify the issue to solve the problems if something wrong happens</p>
 
 Font color - hex (ffffff for white)
 

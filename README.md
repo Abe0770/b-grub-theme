@@ -10,7 +10,8 @@ This image is different from the actual grub theme in aspects of size, padding e
 
 ## Installing:
 
-If git is not installed use "sudo apt-get install git" to install git
+If git is not installed use "sudo apt-get install git" to install git if using a debian based distro.
+<a href="https://www.maketecheasier.com/install-software-in-various-linux-distros/">Click here to see how to install packages for different distros.</a>
 ```
 git clone https://github.com/Abe0770/b-grub-theme.git
 

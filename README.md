@@ -9,6 +9,8 @@ This image is different from the actual grub theme in aspects of size, padding e
 <p> Installation requires root permissions </p>
 
 ## Installing:
+
+If git is not installed use "sudo apt-get install git" to install git
 ```
 git clone https://github.com/Abe0770/b-grub-theme.git
 

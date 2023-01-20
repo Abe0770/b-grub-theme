@@ -55,7 +55,7 @@ verify()
     return 0
   fi
   
-  if [ -f /boot/grub/themes/b-grub/background.jpg ]
+  if [[ -f /boot/grub/themes/b-grub/background.jpg || -f /boot/grub/themes/b-grub/background.png ]]
   then 
   	echo -e "${LGREEN}Located ${NC}/boot/grub/themes/b-grub/background.jpg"
   else
@@ -108,16 +108,18 @@ verify()
 background()
 {
   printf "${LPURPLE}\n--------------------------------------------------------------------\nFor better resolution use images with an aspect ratio of 4x3 or 16x9\n--------------------------------------------------------------------"
+  FILE=""
+  printf "\n${LPURPLE} \n${YELLOW}Select the image file${GREEN}(.jpg .png) :${NC} "
+  FILE=$(zenity --file-selection --title "Select a file")
   while true
-  do
-    printf "\n${LPURPLE}[ENTER 1 FOR PREVIOUS MENU] \n${YELLOW}Enter the complete path to file${GREEN}(.jpg .png) :${NC} "
-    read FILE
-    if [[ $FILE == 1 ]] 
+  do  
+    if [[ -z "$FILE" ]] 
     then
+      printf "\n${LRED}Aborted.${NC}" 
       break;
     fi
     if [ -f "$FILE" ]
-    then
+    then	
       if [[ $FILE == *.jpg ]]
       then
       	if [ -f /boot/grub/themes/b-grub/background.png ]
@@ -126,7 +128,7 @@ background()
         	sudo sed -i 's/background.png/background.jpg/g' /boot/grub/themes/b-grub/theme.txt;
         fi
       	sudo cp $FILE /boot/grub/themes/b-grub/background.jpg;
-        echo -e "${LGREEN}Successfully changed the grub background to ${FILE}.${NC}"
+        printf "\n${LGREEN}Successfully changed the grub background to ${FILE}.${NC}\n\n${LRED}WARNING: ${LCYAN}Improper aspect ratio of the image might cause problems while loading grub! Run install.sh again to go back to the initial grub settings or uninstall.sh to remove grub theme!\n"
         break;
       elif [[ $FILE == *.png ]]
       then 
@@ -136,13 +138,18 @@ background()
         	sudo sed -i 's/background.jpg/background.png/g' /boot/grub/themes/b-grub/theme.txt;
         fi	
       	sudo cp $FILE /boot/grub/themes/b-grub/background.png;
-        echo -e "${LGREEN}Successfully changed the grub background to ${FILE}.${NC}"
+      	printf "\n"
+        printf "\n${LGREEN}Successfully changed the grub background to ${FILE}.${NC}\n${LRED}WARNING: ${LCYAN}Improper aspect ratio of the image might cause problems while loading grub! Run install.sh again to go back to the initial grub settings or uninstall.sh to remove grub theme!"
         break;
       else
+      	printf "\n"
         echo -e "${LRED}ERROR: Unsupported file format (requires .jpg or .png)"
+        break;
       fi
     else
+     printf "\n"
      echo -e "${LRED}File doesn't exist${NC}"
+     break;
     fi
   done
 }
@@ -198,25 +205,25 @@ verify ver
 if [ $? == 1 ]
 then
   echo -e "${GREEN}Requirements met.${NC}"
-  printf "${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
+  printf "\n${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
 	while true
 	do
 	  printf "${YELLOW}ENTER YOUR OPTION: ${NC}"
 		read option
 		if [ -z "$option" ]
-		then 
+		then
 			continue
 		elif [ $option == 1 ]
 		then
 			printf "\n${LCYAN}Background${NC}\n"
 			background
-  			printf "${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
-  
+  			printf "\n${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
+
 		elif [ $option == 2 ]
 		  then
 		  	printf "\n${LCYAN}Font Color${NC}\n"
 			font_color
-  			printf "${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
+  			printf "\n${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
   
 		  
 		elif [ $option == 3 ]

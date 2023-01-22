@@ -110,7 +110,7 @@ background()
   printf "${LPURPLE}\n--------------------------------------------------------------------\nFor better resolution use images with an aspect ratio of 4x3 or 16x9\n--------------------------------------------------------------------"
   FILE=""
   printf "\n${LPURPLE} \n${YELLOW}Select the image file${GREEN}(.jpg .png) :${NC} "
-  FILE=$(zenity --file-selection --title "Select a file")
+  FILE=$(zenity --file-selection --filename=$HOME --file-filter "*.jpg , *.png" --title "Select a file")
   while true
   do  
     if [[ -z "$FILE" ]] 

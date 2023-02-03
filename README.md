@@ -14,11 +14,14 @@ If git is not installed use "sudo apt-get install git" to install git if using a
 <a href="https://www.maketecheasier.com/install-software-in-various-linux-distros/">Click here to see how to install packages for different distros.</a>
 ```
 git clone https://github.com/Abe0770/b-grub-theme.git
-
+```
+```
 cd b-grub-theme
-
+```
+```
 chmod u+x install.sh
-
+```
+```
 sudo ./install.sh
 ```
 
@@ -29,7 +32,8 @@ sudo ./install.sh
 
 ```
 chmod +x customize.sh
-
+```
+```
 sudo ./customize.sh
 ```
 <p>Background - jpg png ( Recomended Aspect ratio of the image - <b>4x3 or 16:9</b> other aspect ratios might cause error ) <br>Execute install.sh and rectify the issue to solve the problems if something wrong happens.</p>
@@ -43,7 +47,8 @@ More features coming soon!
 
 ```
 chmod u+x uninstall.sh
-
+```
+```
 sudo ./uninstall.sh
 ```
 

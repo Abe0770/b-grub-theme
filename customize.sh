@@ -110,7 +110,7 @@ background()
   printf "${LPURPLE}\n--------------------------------------------------------------------\nFor better resolution use images with an aspect ratio of 4x3 or 16x9\n--------------------------------------------------------------------"
   FILE=""
   printf "\n${LPURPLE} \n${YELLOW}Select the image file${GREEN}(.jpg .png) :${NC} "
-  FILE=$(zenity --file-selection --filename=$HOME --file-filter "*.jpg , *.png" --title "Select a file")
+  FILE=$(zenity --file-selection --title "Select a file")
   while true
   do  
     if [[ -z "$FILE" ]] 
@@ -156,7 +156,7 @@ background()
 
 font_color()
 {
-  printf "${LPURPLE}\n-----------------------------------------------------------------------------------------------------------------------------\nEnter the hex value of your desired font color. For example \'ffffff\' for white. To pick a color use${LBLUE} https://g.co/kgs/HX4P4V ${NC}\n${LPURPLE}-----------------------------------------------------------------------------------------------------------------------------${NC}"
+  printf "${LPURPLE}\n-----------------------------------------------------------------------------------------------------------------------------\nEnter the hex value of your desired font color. For example \'ffffff\' for white. To pick a color use${LBLUE} https://g.co/kgs/HX4P4V ${NC}\n-----------------------------------------------------------------------------------------------------------------------------"
   while true
   do
     printf "\n${YELLOW}Hex value of the color for grub menu list : ${NC} "
@@ -210,32 +210,31 @@ then
 	do
 	  printf "${YELLOW}ENTER YOUR OPTION: ${NC}"
 		read option
-		
-		if [[ -z "$option" ]]
+		if [ -z "$option" ]
 		then
 			continue
-		elif [[ $option == 1 ]]
+		elif [ $option == 1 ]
 		then
 			printf "\n${LCYAN}Background${NC}\n"
 			background
   			printf "\n${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
 
-		elif [[ $option == 2 ]]
+		elif [ $option == 2 ]
 		  then
 		  	printf "\n${LCYAN}Font Color${NC}\n"
 			font_color
   			printf "\n${WHITE}[*] Select an option\n[1] Change grub background\n[2] Change font color\n[3] change font size\n[4] Change font style\n[5] Exit\n\n"
   
 		  
-		elif [[ $option == 3 ]]
+		elif [ $option == 3 ]
 		  then
 		  echo "coming soon"
 		  
-		elif [[ $option == 4 ]]
+		elif [ $option == 4 ]
 		  then
 		  echo "coming soon"
 		  
-		elif [[ $option == 5 ]]
+		elif [ $option == 5 ]
 		  then
 		  echo "To go back to the default settings run install.sh with root permissions."
 		  echo "Quitting..."

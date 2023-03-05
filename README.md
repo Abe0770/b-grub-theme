@@ -19,7 +19,7 @@ git clone https://github.com/Abe0770/b-grub-theme.git
 cd b-grub-theme
 ```
 ```
-chmod u+x install.sh
+chmod +x install.sh
 ```
 ```
 sudo ./install.sh
@@ -47,7 +47,7 @@ More features coming soon!
 <p>Assuming you're in the b-grub-theme directory</p>
 
 ```
-chmod u+x uninstall.sh
+chmod +x uninstall.sh
 ```
 ```
 sudo ./uninstall.sh

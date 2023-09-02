@@ -44,7 +44,7 @@ Font color - hex (ffffff for white)
 More features coming soon!
 
 # Uninstall
-<p>Assuming you're in the b-grub-theme directory</p>
+<p>In the b-grub-theme directory</p>
 
 ```
 chmod +x uninstall.sh

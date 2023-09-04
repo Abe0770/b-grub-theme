@@ -5,10 +5,10 @@ Simple GRUB theme for Linux distros
 
 This image is different from the actual grub theme in aspects of size, padding etc. This gives only a peek to what the actual theme will look like. 
 
-# Installing and Requirements 
+# Installation and Requirements 
 <p> Installation requires root permissions. </p>
 
-## Installing:
+## Installation:
 
 If git is not installed use "sudo apt-get install git" to install git if using a debian based distro.
 <a href="https://www.maketecheasier.com/install-software-in-various-linux-distros/">Click here to see how to install packages for different distros.</a>
